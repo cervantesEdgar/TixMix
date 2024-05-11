@@ -12,17 +12,14 @@ namespace TixMix.Models
         public int EventID { get; set; }
         public DateTime EventDate { get; set; }
         public List<TicketModel> Ticket { get; set; }
+
         /*
-         
-         
          eventID : int
 eventDate : DateTime
 eventName : String
 eventCategory : String
 totalTickets: int
 ticketsLeft: int
-
-         
          */
     }
 }
