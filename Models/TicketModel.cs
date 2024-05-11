@@ -12,7 +12,7 @@ namespace TixMix.Models
         public DateTime? PurchaseDate { get; set; }  /*NUllable DateTime */
         public bool wasPurchased { get; set; }
         public int UniqueTicketID { get; set; }
-       
+       // no manches
         /*
          
          seatLocation: String
