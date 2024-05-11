@@ -22,6 +22,7 @@ namespace TixMix.Views
         public HomePageView()
         {
             InitializeComponent();
+            DataContext = new ViewModels.LoginViewModel();
         }
     }
 }

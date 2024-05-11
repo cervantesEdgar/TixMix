@@ -15,7 +15,7 @@ namespace TixMix.Models
         public DateTime PaymentDate { get; set; }
         public int BookingID { get; set; }
 
-        public Booking(float paymentAmount, float secureTransactionID, string cardInfo, int paymentID, DateTime paymentDate, int bookingID)
+        public BillingModel(float paymentAmount, float secureTransactionID, string cardInfo, int paymentID, DateTime paymentDate, int bookingID)
         {
             PaymentAmount = paymentAmount;
             SecureTransactionID = secureTransactionID;

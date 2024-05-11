@@ -33,7 +33,7 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="Password:" Grid.Column="0"/>
-                    <PasswordBox Password="{Binding Password}" Grid.Column="1" Margin="5,0" Height="30"/>
+                    <TextBlock Text="{Binding Password}" Grid.Column="1" Margin="5,0" Height="30"/>
                 </Grid>
                 <Button Content="Login" Command="{Binding LoginCommand}" Grid.Row="3" Margin="10" Height="40" Background="#007ACC" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand"/>
                 <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" Grid.Row="4" Margin="10"/>
