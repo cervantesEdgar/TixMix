@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,7 @@ namespace TixMix.Models
         public float PaymentAmount { get; set; }
         public float SecureTransactionID { get; set; }
         public string CardInfo { get; set; }
-        public int PaymentID {  get; set; }
+        public int PaymentID { get; set; }
         public DateTime PaymentDate { get; set; }
         public int BookingID { get; set; }
 
