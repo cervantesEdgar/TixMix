@@ -7,36 +7,39 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              Background="White">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="10"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="10"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="10"/>
-        </Grid.RowDefinitions>
-        
-        <!--Row 1-->
-        <Button Grid.Column="1" Grid.ColumnSpan="6" Grid.Row="1" Background="Black"/>
-        <!--Row 2-->
-        <Button Grid.Column="2" Grid.Row="2" Background="Green"/>
 
+    <Grid Background="#F0F0F0">
+        <Border BorderBrush="#007ACC" BorderThickness="1" Background="#FFFFFF" CornerRadius="10" Margin="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Login" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20"/>
+                <Grid Grid.Row="1" Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Username:" Grid.Column="0"/>
+                    <TextBox Text="{Binding Username}" Grid.Column="1" Margin="5,0" Height="30"/>
+                </Grid>
+                <Grid Grid.Row="2" Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Password:" Grid.Column="0"/>
+                    <PasswordBox Password="{Binding Password}" Grid.Column="1" Margin="5,0" Height="30"/>
+                </Grid>
+                <Button Content="Login" Command="{Binding LoginCommand}" Grid.Row="3" Margin="10" Height="40" Background="#007ACC" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand"/>
+                <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" Grid.Row="4" Margin="10"/>
+            </Grid>
+        </Border>
 
     </Grid>
+
 </UserControl>
