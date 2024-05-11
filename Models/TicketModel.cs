@@ -9,6 +9,10 @@ namespace TixMix.Models
     internal class TicketModel
     {
         public string SeatLocation { get; set; }
+        public DateTime? PurchaseDate { get; set; }  /*NUllable DateTime */
+        public bool wasPurchased { get; set; }
+        public int UniqueTicketID { get; set; }
+       
         /*
          
          seatLocation: String
