@@ -11,5 +11,7 @@ namespace TixMix.Models
         public string Username { get; set; }
         public string Password { get; set; }
         public List<EventModel> PurchasedEvent { get; set; }
+        public string UserType { get; set; }
+        public string UserEmail { get; set; }
     }
 }
