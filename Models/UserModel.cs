@@ -8,5 +8,8 @@ namespace TixMix.Models
 {
     internal class UserModel
     {
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public List<EventModel> PurchasedEvent { get; set; }
     }
 }
